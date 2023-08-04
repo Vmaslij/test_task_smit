@@ -63,5 +63,5 @@ async def calc_price(item: Rate):
 
 
 if __name__ == '__main__':
-    uvicorn.run("main_smit:app")
+    uvicorn.run("main_smit:app", host="0.0.0.0")
     run_async(Tortoise.close_connections())
